@@ -80,7 +80,7 @@ const Hero = () => {
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="absolute -z-10 inset-0 rounded-full bg-primary/20 blur-2xl animate-float" />
+            <div className="absolute -z-10 inset-0 rounded-full bg-primary/20 blur-xl animate-float" />
           </div>
         </div>
       </div>
