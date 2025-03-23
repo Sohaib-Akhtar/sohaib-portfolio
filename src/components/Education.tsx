@@ -67,7 +67,7 @@ const Education = () => {
                 className="animated-border bg-card p-3 md:p-4 opacity-0 animate-fade-in"
                 style={{ animationDelay: `${300 + index * 100}ms` }}
               >
-                <div className="flex flex-col md:flex-row items-start gap-6 glass-effect">
+                <div className="flex flex-col md:flex-row items-start gap-6 glass-effect text-white">
                     <div className="md:w-24 shrink-0">
                       <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-white p-2 shadow-sm">
                         <img 
@@ -105,7 +105,7 @@ const Education = () => {
           </div>
           
           <div>
-            <h3 className="text-2xl font-display font-semibold mb-6 opacity-0 animate-fade-in animate-delay-200">
+            <h3 className="text-2xl font-display font-semibold mb-6 opacity-0 animate-fade-in animate-delay-200 text-white">
               Certifications
             </h3>
             
@@ -113,7 +113,7 @@ const Education = () => {
               {certifications.map((cert, index) => (
                 <div 
                   key={cert.id}
-                  className="animated-border bg-card p-6 opacity-0 animate-fade-in animate-delay-300"
+                  className="animated-border bg-card p-6 opacity-0 animate-fade-in animate-delay-300 text-white"
                   style={{ animationDelay: `${300 + index * 100}ms` }}
                 >
                   <div className="flex items-start gap-4">

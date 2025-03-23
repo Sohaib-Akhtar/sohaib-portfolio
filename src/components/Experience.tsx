@@ -78,7 +78,7 @@ const Experience = () => {
           </p>
         </div>
         
-        <div className="flex justify-center mb-10 opacity-0 animate-fade-in animate-delay-200">
+        <div className="flex justify-center mb-10 opacity-0 animate-fade-in animate-delay-200 text-white">
           <div className="inline-flex p-1 rounded-lg bg-secondary">
             <button
               onClick={() => setActiveTab("all")}
