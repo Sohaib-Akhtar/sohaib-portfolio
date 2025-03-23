@@ -23,7 +23,7 @@ const Projects = () => {
       id: "blindassistant",
       title: "Blind Assistant",
       description: "An AI-powered mobile application designed to help visually impaired individuals navigate their surroundings and identify objects.",
-      image: "https://www.flickr.com/photos/37867189@N07/7194630246",
+      image: "https://www.asme.org/getmedia/edf28cc5-e0be-43d4-8d87-1ba431306477/walking-stick-for-the-blind_hero.jpg?width=854&height=480&ext=.jpg",
       technologies: ["Python", "PyTorch", "React Native"],
       category: "ai",
       links: {
