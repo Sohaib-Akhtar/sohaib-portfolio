@@ -15,8 +15,8 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]";
-  const mobileMenuStyle = "md:hidden fixed top-[calc(var(--header-height))] left-0 right-0 bg-gray-800/90 backdrop-blur-[6.7px] border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] animate-slide-down";
+  const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.1)]";
+  const mobileMenuStyle = "md:hidden fixed top-[calc(var(--header-height))] left-0 right-0 bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.2)] animate-slide-down";
 
   // Dynamically update CSS variable for header height
   useEffect(() => {
