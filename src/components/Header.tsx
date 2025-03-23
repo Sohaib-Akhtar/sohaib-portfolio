@@ -31,14 +31,16 @@ const Header = () => {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a 
           href="#hero" 
-          className="text-2xl font-display font-semibold text-gradient inline-block rounded-md p-2 relative bg-blue-900"
+          className="text-2xl font-display font-semibold inline-block rounded-md p-2 relative"
           style={{
             background: "linear-gradient(to right, #0f172a, #0f172a) padding-box, linear-gradient(to right, #6366f1, #ec4899) border-box",
             border: "2px solid transparent",
-            borderRadius: "0.375rem"
+            borderRadius: "0.375rem",
+            WebkitBackgroundClip: "padding-box, border-box",
+            backgroundClip: "padding-box, border-box"
           }}
         >
-          Sohaib Akhtar
+          <span className="text-gradient">Sohaib Akhtar</span>
         </a>
 
           {/* Desktop Navigation */}
