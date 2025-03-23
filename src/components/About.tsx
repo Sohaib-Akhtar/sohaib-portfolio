@@ -56,19 +56,6 @@ const About = () => {
           </div>
           
           <div className="grid grid-cols-1 gap-6 opacity-0 animate-fade-in-right animate-delay-300">
-            <div className="glass-card p-6 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4">Areas of Specialization</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="flex items-center p-3 rounded-lg bg-background/50">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
-                      {skill.icon}
-                    </div>
-                    <span className="font-medium">{skill.name}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
             
             <div className="glass-card p-6 rounded-xl">
               <h3 className="text-xl font-semibold mb-4">Notable Achievements</h3>
