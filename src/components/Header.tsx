@@ -40,7 +40,7 @@ const Header = () => {
             backgroundClip: "padding-box, border-box"
           }}
         >
-          <span className="text-gradient">Sohaib Akhtar</span>
+          <span className="text-white">Sohaib Akhtar</span>
         </a>
 
           {/* Desktop Navigation */}
