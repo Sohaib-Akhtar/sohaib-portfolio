@@ -38,7 +38,7 @@ const Experience = () => {
       company: "Teradata",
       logo: "https://media.licdn.com/dms/image/v2/D560BAQGgQByLIN_rtA/company-logo_400_400/company-logo_400_400/0/1697134375805/teradata_logo?e=1748476800&v=beta&t=hbKGjOpgV5YnyAw4NS9vd4wce12-nxeIzqmvmbusCxU",
       location: "Islamabad, Pakistan",
-      period: "Jul 2021 - Aug 2023",
+      period: "Jul 2021 - Mar 2024",
       description: [
         "Led the development of microservices for data integration solutions using Java and Spring Boot",
         "Designed and implemented RESTful APIs following best practices and standards",
