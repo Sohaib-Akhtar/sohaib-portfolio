@@ -109,6 +109,10 @@ export default {
 				shimmer: {
 					'0%': { backgroundPosition: '-200% 0' },
 					'100%': { backgroundPosition: '200% 0' }
+				},
+				'slow-shimmer': {
+					'0%': { backgroundPosition: '400% 0' },
+					'100%': { backgroundPosition: '-400% 0' }
 				}
 			},
 			animation: {
@@ -120,7 +124,8 @@ export default {
 				'scale-in': 'scaleIn 0.6s ease-out forwards',
 				'float': 'float 5s ease-in-out infinite',
 				'slide-down': 'slideDown 0.5s ease-out forwards',
-				'shimmer': 'shimmer 2s linear infinite'
+				'shimmer': 'shimmer 2s linear infinite',
+				'slow-shimmer': 'slow-shimmer 8s ease-in-out infinite'
 			},
 			boxShadow: {
 				'soft': '0 8px 30px rgba(0, 0, 0, 0.05)',

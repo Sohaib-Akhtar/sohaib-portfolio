@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 interface ExperienceItem {
   id: string;
@@ -127,7 +128,7 @@ const Experience = () => {
           {filteredExperiences.map((exp, index) => (
             <div 
               key={exp.id}
-              className="animated-border bg-card p-6 md:p-8 opacity-0 animate-fade-in"
+              className="slow-animated-border bg-card p-6 md:p-8 opacity-0 animate-fade-in"
               style={{ animationDelay: `${300 + index * 100}ms` }}
             >
               <div className="flex flex-col md:flex-row items-start gap-6">
