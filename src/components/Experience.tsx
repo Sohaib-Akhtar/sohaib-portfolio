@@ -127,7 +127,7 @@ const Experience = () => {
           {filteredExperiences.map((exp, index) => (
             <div 
               key={exp.id}
-              className="animated-border bg-card p-6 md:p-8 opacity-0 animate-fade-in"
+              className="animated-border bg-card p-3 md:p-4 opacity-0 animate-fade-in"
               style={{ animationDelay: `${300 + index * 100}ms` }}
             >
               <div className="flex flex-col md:flex-row items-start gap-6 glass-effect">

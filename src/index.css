@@ -151,7 +151,7 @@
   }
   
   .glass-effect {
-    @apply relative bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl p-2;
+    @apply relative bg-black/[0.10] backdrop-blur-[7.7px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl p-4;
   }
   
   .section {
