@@ -133,10 +133,10 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium">Email</h4>
                     <a 
-                      href="mailto:sohaib.akhtar@example.com" 
+                      href="sohaib.akhtar.dev@gmail.com" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      sohaib.akhtar@example.com
+                      sohaib.akhtar.dev@gmail.com
                     </a>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium">Location</h4>
                     <p className="text-muted-foreground">
-                      Passau, Bavaria, Germany
+                      Munich, Bavaria, Germany
                     </p>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      linkedin.com/in/sohaibakhtar
+                      https://www.linkedin.com/in/connoisseur1/
                     </a>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <h4 className="text-lg font-medium mb-4">Response Time</h4>
                 <p className="text-muted-foreground">
                   I typically respond to inquiries within 24-48 hours. For urgent matters, 
-                  please indicate so in your message subject.
+                  please indicate so in your message subject or reach out on my Linkedin.
                 </p>
               </div>
             </div>

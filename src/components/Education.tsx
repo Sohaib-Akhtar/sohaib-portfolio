@@ -155,7 +155,7 @@ const Education = () => {
                     <h4 className="text-lg font-semibold">Online Courses</h4>
                     <p className="text-sm text-muted-foreground mt-1">
                       Continuously upgrading skills through online platforms focusing on cloud technologies, 
-                      microservices architecture, and advanced programming concepts.
+                      design patterns, and advanced programming concepts.
                     </p>
                   </div>
                 </div>

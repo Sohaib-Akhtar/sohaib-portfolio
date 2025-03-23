@@ -23,11 +23,12 @@ const Experience = () => {
       company: "Motius GmbH",
       logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFuVUvnSZpM_A/company-logo_400_400/company-logo_400_400/0/1705652294209/motius_gmbh_logo?e=1748476800&v=beta&t=6N-DuFd2ZqNR2sxcv0Al69h_dAbagJ57sZqgbFBC2iQ",
       location: "Munich, Bavaria, Germany",
-      period: "Oct 2023 - Present",
+      period: "Sept 2024 - Present",
       description: [
-        "Developing and maintaining cloud-native applications using Java and microservices architecture",
+        "Developed from scratch and currently maintaining sales incentive management application for Siemens global sales team in Next Js",
+        "Working with monorepos, microfrontends and microservices",
         "Implementing CI/CD pipelines for automated testing and deployment",
-        "Collaborating with cross-functional teams to deliver high-quality software solutions"
+        "Collaborating with cross-functional teams",
       ],
       type: "part-time"
     },
@@ -42,7 +43,7 @@ const Experience = () => {
         "Led the development of microservices for data integration solutions using Java and Spring Boot",
         "Designed and implemented RESTful APIs following best practices and standards",
         "Optimized application performance by identifying and resolving bottlenecks",
-        "Received Spot Performance Award and Employee of the Quarter Award for exceptional contributions"
+        "Received Spot Performance Award and Employee of the Quarter Award for exceptional contributions in AWS optimization"
       ],
       type: "full-time"
     },
@@ -54,7 +55,7 @@ const Experience = () => {
       location: "Islamabad, Pakistan",
       period: "May 2020 - Aug 2020",
       description: [
-        "Developed backend services using Python and Django framework",
+        "Developed backend services using Python and Django framework for an AI based application",
         "Implemented database models and migrations for efficient data storage",
         "Created API endpoints for mobile and web applications",
         "Participated in code reviews and testing processes"

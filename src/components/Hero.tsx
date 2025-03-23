@@ -31,8 +31,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-delay-400">
-            I'm a software engineer specializing in building cloud-native applications
-            and microservices with a strong focus on performance and scalability.
+            I'm a software engineer specializing in building frontend applications
+            and scalable backends with a strong focus on performance.
           </p>
           
           <div className="flex flex-wrap gap-4 mb-10 animate-delay-500">
@@ -91,16 +91,6 @@ const Hero = () => {
             <div className="absolute -z-10 inset-0 rounded-full bg-primary/20 blur-2xl animate-float" />
           </div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-        <a 
-          href="#about" 
-          className="flex flex-col items-center text-muted-foreground hover:text-foreground transition-colors duration-200"
-        >
-          <span className="text-sm mb-2">Scroll down</span>
-          <ArrowDownCircle size={24} />
-        </a>
       </div>
     </section>
   );

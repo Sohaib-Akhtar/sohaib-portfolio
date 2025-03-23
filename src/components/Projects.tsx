@@ -38,7 +38,6 @@ const Projects = () => {
       technologies: ["Python", "PyTorch", "NLP", "Speech Processing"],
       category: "ai",
       links: {
-        demo: "https://urdu-asr-demo.example.com",
         github: "https://github.com/sohaibakhtar/urdu-asr"
       }
     },
@@ -50,7 +49,6 @@ const Projects = () => {
       technologies: ["Java", "Spring Boot", "Docker", "Kubernetes"],
       category: "backend",
       links: {
-        github: "https://github.com/sohaibakhtar/microservice-framework"
       }
     },
     {
@@ -61,7 +59,6 @@ const Projects = () => {
       technologies: ["Python", "React", "AWS", "Data Analytics"],
       category: "fullstack",
       links: {
-        demo: "https://healthcare-analytics-demo.example.com"
       }
     }
   ];
