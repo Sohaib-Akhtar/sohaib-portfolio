@@ -114,8 +114,12 @@
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
+    @apply bg-clip-text text-transparent;
+    background: linear-gradient(to right, #6366f1, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
+  
   
   .glass-card {
     @apply bg-white/80 dark:bg-black/40 backdrop-blur-lg border border-white/20 dark:border-white/10 shadow-soft;
@@ -140,10 +144,11 @@
   
   .animated-border::before {
     content: '';
-    @apply absolute inset-0 rounded-xl p-[1px] bg-gradient-to-r from-[#6366f1]/50 via-[#a855f7]/50 to-[#ec4899]/50 -z-10 animate-shimmer;
+    @apply absolute inset-0 rounded-xl p-[1px] -z-10;
+    background: linear-gradient(to right, #6366f1, #8b5cf6, #ec4899, #8b5cf6, #6366f1);
     background-size: 200% 100%;
     animation: shimmer 15s linear infinite;
-}
+  }
   
   .section {
     @apply py-16 md:py-24;
