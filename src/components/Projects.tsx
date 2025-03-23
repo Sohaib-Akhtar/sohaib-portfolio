@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ["Python", "TensorFlow", "React Native", "AWS"],
       category: "ai",
       links: {
-        github: "https://github.com/sohaibakhtar/blind-assistant"
+        github: "https://github.com/sohaib-akhtar"
       }
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       technologies: ["Python", "PyTorch", "NLP", "Speech Processing"],
       category: "ai",
       links: {
-        github: "https://github.com/sohaibakhtar/urdu-asr"
+        github: "https://github.com/sohaib-akhtar"
       }
     },
     {
@@ -110,11 +110,11 @@ const Projects = () => {
               style={{ animationDelay: `${300 + index * 100}ms` }}
             >
               <div className="relative overflow-hidden aspect-video">
-                <img 
+                {/* <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                /> */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="flex gap-3">
                     {project.links.demo && (

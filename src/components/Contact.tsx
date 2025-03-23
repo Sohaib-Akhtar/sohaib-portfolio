@@ -177,7 +177,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium">GitHub</h4>
                     <a 
-                      href="https://github.com/sohaibakhtar" 
+                      href="https://github.com/sohaib-akhtar" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"

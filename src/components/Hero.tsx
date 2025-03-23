@@ -52,7 +52,7 @@ const Hero = () => {
           
           <div className="flex items-center gap-6 animate-delay-500">
             <a 
-              href="https://github.com/sohaibakhtar" 
+              href="https://github.com/sohaib-akhtar" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors duration-200"
