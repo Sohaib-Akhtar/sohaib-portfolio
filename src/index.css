@@ -142,6 +142,7 @@
     content: '';
     @apply absolute inset-0 rounded-xl p-[1px] bg-gradient-to-r from-primary/50 via-blue-400/50 to-primary/50 -z-10 animate-shimmer;
     background-size: 200% 100%;
+    animation: shimmer 15s linear infinite;
   }
   
   .section {
