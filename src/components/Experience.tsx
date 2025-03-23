@@ -147,7 +147,7 @@ const Experience = () => {
                       <h3 className="text-xl font-semibold">{exp.role}</h3>
                       <div className="flex items-center mt-1">
                         <span className="font-medium">{exp.company}</span>
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#293b77] ml-2">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[white] text-black ml-2">
                           {exp.type === "full-time" ? "Full-time" : exp.type === "part-time" ? "Part-time" : "Internship"}
                         </span>
                       </div>
@@ -159,7 +159,7 @@ const Experience = () => {
                     </div>
                   </div>
                   
-                  <div className="inline-flex items-center text-sm text-white mb-4 bg-[#293b77] px-3 py-2 rounded-md">
+                  <div className="inline-flex items-center text-sm mb-4 bg-[white] text-black px-3 py-2 rounded-md">
                     <MapPin size={16} className="mr-1" />
                     <span>{exp.location}</span>
                   </div>
