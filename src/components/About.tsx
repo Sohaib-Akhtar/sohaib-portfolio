@@ -85,10 +85,6 @@ const About = () => {
                   <Award size={20} className="text-primary mt-1 mr-3 shrink-0" />
                   <span>Employee of the Quarter Award at Teradata</span>
                 </li>
-                <li className="flex items-start">
-                  <Award size={20} className="text-primary mt-1 mr-3 shrink-0" />
-                  <span>Dean's Honour List (Spring 2021, Fall 2020)</span>
-                </li>
               </ul>
             </div>
           </div>
