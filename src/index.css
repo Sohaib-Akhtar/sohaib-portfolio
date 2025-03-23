@@ -144,7 +144,7 @@
   
   .animated-border::before {
     content: '';
-    @apply absolute inset-0 rounded-xl p-[1px] -z-10;
+    @apply absolute inset-0 rounded-xl p-[1px] -z-10 animate-shimmer;
     background: linear-gradient(to right, #6366f1, #8b5cf6, #ec4899, #8b5cf6, #6366f1);
     background-size: 200% 100%;
     animation: shimmer 15s linear infinite;
