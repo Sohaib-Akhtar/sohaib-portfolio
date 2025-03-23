@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
-import DarkModeToggle from './ui/dark-mode';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,44 +29,38 @@ const Header = () => {
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <a 
-            href="#hero" 
-            className="text-2xl font-display font-semibold inline-block rounded-md p-2 relative"
-            style={{
-              background: "linear-gradient(to right, #0f172a, #0f172a) padding-box, linear-gradient(to right, #6366f1, #ec4899) border-box",
-              border: "2px solid transparent",
-              borderRadius: "0.375rem",
-              WebkitBackgroundClip: "padding-box, border-box",
-              backgroundClip: "padding-box, border-box"
-            }}
+        <a 
+          href="#hero" 
+          className="text-2xl font-display font-semibold inline-block rounded-md p-2 relative"
+          style={{
+            background: "linear-gradient(to right, #0f172a, #0f172a) padding-box, linear-gradient(to right, #6366f1, #ec4899) border-box",
+            border: "2px solid transparent",
+            borderRadius: "0.375rem",
+            WebkitBackgroundClip: "padding-box, border-box",
+            backgroundClip: "padding-box, border-box"
+          }}
+        >
+          <span className="text-white">Sohaib Akhtar</span>
+        </a>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-1">
+            <a href="#about" className="nav-item">About</a>
+            <a href="#experience" className="nav-item">Experience</a>
+            <a href="#education" className="nav-item">Education</a>
+            <a href="#skills" className="nav-item">Skills</a>
+            <a href="#projects" className="nav-item">Projects</a>
+            <a href="#contact" className="nav-item">Contact</a>
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-md text-foreground"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            <span className="text-white">Sohaib Akhtar</span>
-          </a>
-
-          {/* Desktop Navigation with Dark Mode Toggle at the end */}
-          <div className="hidden md:flex items-center">
-            <nav className="flex items-center space-x-1 mr-4">
-              <a href="#about" className="nav-item">About</a>
-              <a href="#experience" className="nav-item">Experience</a>
-              <a href="#education" className="nav-item">Education</a>
-              <a href="#skills" className="nav-item">Skills</a>
-              <a href="#projects" className="nav-item">Projects</a>
-              <a href="#contact" className="nav-item">Contact</a>
-            </nav>
-            <DarkModeToggle />
-          </div>
-
-          {/* Mobile Menu with Dark Mode Toggle before menu toggle */}
-          <div className="md:hidden flex items-center space-x-2">
-            <DarkModeToggle />
-            <button
-              className="flex items-center justify-center w-10 h-10 rounded-md text-foreground"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </header>
 
