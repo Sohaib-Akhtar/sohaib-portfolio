@@ -84,7 +84,7 @@ const Experience = () => {
               onClick={() => setActiveTab("all")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "all" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -94,7 +94,7 @@ const Experience = () => {
               onClick={() => setActiveTab("full-time")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "full-time" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -104,7 +104,7 @@ const Experience = () => {
               onClick={() => setActiveTab("part-time")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "part-time" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -114,7 +114,7 @@ const Experience = () => {
               onClick={() => setActiveTab("internship")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "internship" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >

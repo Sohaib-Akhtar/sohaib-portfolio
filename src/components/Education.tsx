@@ -96,7 +96,7 @@ const Education = () => {
                         <span>{item.location}</span>
                       </div>
                       
-                      <p className="text-foreground">{item.description}</p>
+                      <p className="text-foreground text-white">{item.description}</p>
                     </div>
                   </div>
                 </div>
