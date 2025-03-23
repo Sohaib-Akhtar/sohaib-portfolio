@@ -177,3 +177,16 @@
     animation-delay: 500ms;
   }
 }
+
+/* Add this to your global CSS file (e.g., globals.css) */
+@media (prefers-color-scheme: light) {
+  /* This overrides the light mode preference with dark mode styles */
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* For absolutely ensuring dark mode in all cases, you can also add: */
+:root {
+  color-scheme: dark;
+}
