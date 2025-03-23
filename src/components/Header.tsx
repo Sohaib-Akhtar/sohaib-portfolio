@@ -15,11 +15,13 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)]";
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'py-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-sm' 
+          ? `py-3 ${glassStyle} rounded-b-xl` 
           : 'py-5 bg-transparent'
       }`}
     >
@@ -50,7 +52,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-md animate-slide-down">
+        <div className={`md:hidden absolute top-full left-0 right-0 ${glassStyle} rounded-b-xl animate-slide-down`}>
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-2">
             <a href="#about" className="nav-item" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#experience" className="nav-item" onClick={() => setIsMenuOpen(false)}>Experience</a>

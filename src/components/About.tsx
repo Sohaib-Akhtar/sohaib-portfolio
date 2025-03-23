@@ -15,6 +15,8 @@ const About = () => {
     { name: "German", proficiency: "Elementary" },
   ];
   
+  const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-[16px]";
+  
   return (
     <section id="about" className="section bg-secondary/30">
       <div className="container mx-auto px-4 md:px-6">
@@ -57,7 +59,7 @@ const About = () => {
           
           <div className="grid grid-cols-1 gap-6 opacity-0 animate-fade-in-right animate-delay-300">
             
-            <div className="glass-card p-6 rounded-xl">
+            <div className={`p-6 ${glassStyle}`}>
               <h3 className="text-xl font-semibold mb-4">Notable Achievements</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
