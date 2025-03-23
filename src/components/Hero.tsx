@@ -61,7 +61,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/sohaibakhtar" 
+              href="https://www.linkedin.com/in/connoisseur1/" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors duration-200"
@@ -70,7 +70,7 @@ const Hero = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:sohaib.akhtar@example.com" 
+              href="mailto:sohaib.akhtar.dev@gmail.com" 
               className="text-muted-foreground hover:text-foreground transition-colors duration-200"
               aria-label="Email"
             >
