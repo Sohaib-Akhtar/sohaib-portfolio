@@ -2,13 +2,11 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 
 export default function DarkModeToggle() {
+  // Check for user's preference when component mounts
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
 
   useEffect(() => {
-    // Set dark mode as default on initial render
-    document.documentElement.classList.add('dark');
-    
-    // Apply dark mode changes whenever the state changes
+    // Apply dark mode on initial render
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
