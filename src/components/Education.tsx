@@ -91,7 +91,7 @@ const Education = () => {
                         </div>
                       </div>
                       
-                      <div className="inline-flex items-center text-sm text-white mb-4 bg-[#426EF0] px-3 py-2 rounded-md">
+                      <div className="inline-flex items-center text-sm text-white mb-4 bg-[#293b77] px-3 py-2 rounded-md">
                         <MapPin size={16} className="mr-1" />
                         <span>{item.location}</span>
                       </div>
