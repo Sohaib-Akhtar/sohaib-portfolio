@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -16,9 +15,11 @@ const Header = () => {
   }, []);
 
   const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.1)]";
-  const mobileMenuStyle = "md:hidden fixed top-[calc(var(--header-height))] left-0 right-0 bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.2)] animate-slide-down";
+  
+  // Update mobile menu to always maintain the glass style
+  const mobileMenuStyle = `md:hidden fixed left-0 right-0 ${glassStyle} animate-slide-down`;
 
-  // Dynamically update CSS variable for header height
+  // Update header height effect to handle menu toggling as well
   useEffect(() => {
     const updateHeaderHeight = () => {
       const headerHeight = document.querySelector('header')?.offsetHeight || 0;
@@ -28,7 +29,7 @@ const Header = () => {
     updateHeaderHeight();
     window.addEventListener('resize', updateHeaderHeight);
     return () => window.removeEventListener('resize', updateHeaderHeight);
-  }, [isScrolled]);
+  }, [isScrolled, isMenuOpen]);
 
   return (
     <header 
@@ -63,9 +64,9 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - Removed gap by changing positioning */}
       {isMenuOpen && (
-        <div className={mobileMenuStyle}>
+        <div className={mobileMenuStyle} style={{ top: 'var(--header-height)', marginTop: '0' }}>
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-2">
             <a href="#about" className="nav-item" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#experience" className="nav-item" onClick={() => setIsMenuOpen(false)}>Experience</a>
