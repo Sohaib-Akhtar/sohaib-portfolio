@@ -142,18 +142,18 @@ const Experience = () => {
                 </div>
                 
                 <div className="flex-grow">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-4 text-white">
                     <div>
                       <h3 className="text-xl font-semibold">{exp.role}</h3>
                       <div className="flex items-center mt-1">
                         <span className="font-medium">{exp.company}</span>
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#293b77] text-white ml-2">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#293b77] ml-2">
                           {exp.type === "full-time" ? "Full-time" : exp.type === "part-time" ? "Part-time" : "Internship"}
                         </span>
                       </div>
                     </div>
                     
-                    <div className="mt-2 md:mt-0 flex items-center text-sm">
+                    <div className="mt-2 md:mt-0 flex items-center text-sm text-white">
                       <Calendar size={16} className="mr-1" />
                       <span>{exp.period}</span>
                     </div>
@@ -164,7 +164,7 @@ const Experience = () => {
                     <span>{exp.location}</span>
                   </div>
                   
-                  <ul className="space-y-2 text-foreground">
+                  <ul className="space-y-2 text-foreground text-white">
                     {exp.description.map((item, i) => (
                       <li key={i} className="flex items-start">
                         <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-1.5 mr-2" />
