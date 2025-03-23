@@ -17,38 +17,26 @@ const Skills = () => {
       id: "programming",
       name: "Programming",
       icon: <Code size={20} />,
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "Angular", "React", "Spring Boot", "Node.js"]
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "Angular", "React/Next.js", "Spring Boot", "Nest.js"]
     },
     {
       id: "databases",
       name: "Databases",
       icon: <Database size={20} />,
-      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "SQL", "NoSQL", "Data Modeling"]
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
     },
     {
       id: "cloud",
       name: "Cloud & DevOps",
       icon: <Cloud size={20} />,
-      skills: ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD Pipelines", "GitLab CI", "Jenkins"]
+      skills: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins"]
     },
     {
       id: "architecture",
       name: "Architecture",
       icon: <Layers size={20} />,
-      skills: ["Microservices", "RESTful APIs", "GraphQL", "Event-Driven Architecture", "Domain-Driven Design"]
+      skills: ["Microservices", "Microfrontends", "Event-Driven Architecture", "Domain-Driven Design"]
     },
-    {
-      id: "tools",
-      name: "Tools & Methodologies",
-      icon: <Server size={20} />,
-      skills: ["Git", "Jira", "Agile/Scrum", "TDD", "CI/CD", "Code Review", "Performance Optimization"]
-    },
-    {
-      id: "dataops",
-      name: "DataOps & Analytics",
-      icon: <LineChart size={20} />,
-      skills: ["Data Integration", "ETL Processes", "Data Warehousing", "Data Pipelines", "Analytics"]
-    }
   ];
   
   const activeSkills = skillCategories.find(cat => cat.id === activeCategory)?.skills || [];

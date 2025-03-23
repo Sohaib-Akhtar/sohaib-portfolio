@@ -23,8 +23,8 @@ const Projects = () => {
       id: "blindassistant",
       title: "Blind Assistant",
       description: "An AI-powered mobile application designed to help visually impaired individuals navigate their surroundings and identify objects.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      technologies: ["Python", "TensorFlow", "React Native", "AWS"],
+      image: "https://www.flickr.com/photos/37867189@N07/7194630246",
+      technologies: ["Python", "PyTorch", "React Native"],
       category: "ai",
       links: {
         github: "https://github.com/sohaib-akhtar"
@@ -34,8 +34,8 @@ const Projects = () => {
       id: "urdu-asr",
       title: "Urdu ASR",
       description: "Automatic Speech Recognition system for the Urdu language to convert spoken words into text with high accuracy.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      technologies: ["Python", "PyTorch", "NLP", "Speech Processing"],
+      image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Urdu_alphabets.png",
+      technologies: ["Python", "KaldiASR", "NLP", "Speech Processing"],
       category: "ai",
       links: {
         github: "https://github.com/sohaib-akhtar"
@@ -43,10 +43,10 @@ const Projects = () => {
     },
     {
       id: "microservice-framework",
-      title: "Microservice Framework",
-      description: "A lightweight framework for building scalable microservices with built-in support for service discovery and monitoring.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      technologies: ["Java", "Spring Boot", "Docker", "Kubernetes"],
+      title: "DataOps Framework",
+      description: "A lightweight framework for building scalable DataOps microservices with built-in support for service discovery and monitoring.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Microservices_app_example_v0.4.png",
+      technologies: ["Java", "Spring Boot", "Docker", "Hibernate"],
       category: "backend",
       links: {
       }
@@ -54,9 +54,9 @@ const Projects = () => {
     {
       id: "healthcare-analytics",
       title: "Healthcare Analytics Platform",
-      description: "A platform for healthcare providers to analyze patient data and identify trends to improve care quality and outcomes.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      technologies: ["Python", "React", "AWS", "Data Analytics"],
+      description: "A platform for healthcare providers to analyze patient data and identify trends to improve care quality and outcomes using AI.",
+      image: "https://www.xenonstack.com/hubfs/healthcare-analytics-platform-xenonstack.png",
+      technologies: ["Ollama", "React", "AWS", "Data Analytics"],
       category: "fullstack",
       links: {
       }
@@ -110,11 +110,11 @@ const Projects = () => {
               style={{ animationDelay: `${300 + index * 100}ms` }}
             >
               <div className="relative overflow-hidden aspect-video">
-                {/* <img 
+                <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                /> */}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                   <div className="flex gap-3">
                     {project.links.demo && (
@@ -145,7 +145,7 @@ const Projects = () => {
               
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <p className="mb-4">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.technologies.map((tech, i) => (
