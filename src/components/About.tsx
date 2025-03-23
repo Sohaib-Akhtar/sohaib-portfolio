@@ -23,24 +23,20 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="section-title opacity-0 animate-fade-in">About Me</h2>
           <p className="section-subtitle opacity-0 animate-fade-in animate-delay-100">
-            A passionate software engineer with a focus on building scalable solutions and cloud-native applications.
+            Code Artist or Code Scientist? Meet Sohaib.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 opacity-0 animate-fade-in-left animate-delay-200">
             <p className="text-lg leading-relaxed">
-              I'm Sohaib, a software engineer with expertise in cloud computing and microservices architecture. 
-              Currently working at Motius GmbH part-time while pursuing my Master's degree in Computer Science at Universität Passau.
+              I'm Sohaib, crafting complex frontends and scalable backends at Motius GmbH while pursuing my 
+              Computer Science Master's at Universität Passau. My professional journey has armed me with expertise 
+              in software development, API design, and cloud solutions (Java, Python, Angular, AWS).
             </p>
             <p className="text-lg leading-relaxed">
-              With experience at companies like Teradata and Funavry Technologies, I've developed a strong 
-              foundation in software development practices, API design, and cloud solutions using technologies 
-              like Java, Python, Angular, and AWS.
-            </p>
-            <p className="text-lg leading-relaxed">
-              In my free time, I enjoy engaging in thought-provoking challenges and creative interactions with colleagues. 
-              I'm also passionate about developing AI solutions and healthcare applications as personal projects.
+              When not coding professionally, I'm developing AI applications, tackling thought-provoking challenges, 
+              or collaborating on creative projects that bridge technology and real-world problems.
             </p>
             
             <div className="pt-4">

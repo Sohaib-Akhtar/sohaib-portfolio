@@ -30,11 +30,6 @@ const Hero = () => {
             Building <span className="text-gradient">exceptional</span> software experiences
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-delay-400">
-            I'm a software engineer specializing in building frontend applications
-            and scalable backends with a strong focus on performance.
-          </p>
-          
           <div className="flex flex-wrap gap-4 mb-10 animate-delay-500">
             <a 
               href="#contact" 
