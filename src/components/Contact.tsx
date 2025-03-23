@@ -182,7 +182,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      github.com/sohaibakhtar
+                      github.com/sohaib-akhtar
                     </a>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <h4 className="text-lg font-medium mb-4">Response Time</h4>
                 <p className="text-muted-foreground">
                   I typically respond to inquiries within 24-48 hours. For urgent matters, 
-                  please indicate so in your message subject or reach out on my Linkedin.
+                  please reach out on my Linkedin.
                 </p>
               </div>
             </div>

@@ -85,13 +85,13 @@ const Education = () => {
                           <div className="font-medium mt-1">{item.institution}</div>
                         </div>
                         
-                        <div className="mt-2 md:mt-0 flex items-center text-sm text-muted-foreground">
+                        <div className="mt-2 md:mt-0 flex items-center text-sm">
                           <Calendar size={16} className="mr-1" />
                           <span>{item.period}</span>
                         </div>
                       </div>
                       
-                      <div className="flex items-center text-sm text-muted-foreground mb-4">
+                      <div className="flex items-center text-sm text-white mb-4 bg-[#426EF0] px-3 py-2 rounded-md">
                         <MapPin size={16} className="mr-1" />
                         <span>{item.location}</span>
                       </div>
@@ -127,7 +127,7 @@ const Education = () => {
                     
                     <div>
                       <h4 className="text-lg font-semibold">{cert.name}</h4>
-                      <div className="text-sm text-muted-foreground mt-1">
+                      <div className="text-sm mt-1">
                         {cert.organization} • {cert.date}
                       </div>
                     </div>

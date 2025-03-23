@@ -22,9 +22,6 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className={`md:col-span-7 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <div className="inline-block px-3 py-1 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-4 animate-delay-200">
-            Software Engineer
-          </div>
           
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-4 md:mb-6 leading-tight animate-delay-300">
             Building <span className="text-gradient">exceptional</span> software experiences

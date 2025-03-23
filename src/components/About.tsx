@@ -30,9 +30,8 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 opacity-0 animate-fade-in-left animate-delay-200">
             <p className="text-lg leading-relaxed">
-              I'm Sohaib, crafting complex frontends and scalable backends at Motius GmbH while pursuing my 
-              Computer Science Master's at Universität Passau. My professional journey has armed me with expertise 
-              in software development, API design, and cloud solutions (Java, Python, Angular, AWS).
+              I'm Sohaib, who loves crafting complex frontends and scalable backends in professional settings. I like to use 
+              the end user needs and requirements, to solve something beyond what's expected. 
             </p>
             <p className="text-lg leading-relaxed">
               When not coding professionally, I'm developing AI applications, tackling thought-provoking challenges, 
@@ -60,11 +59,11 @@ const About = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <Award size={20} className="text-primary mt-1 mr-3 shrink-0" />
-                  <span>AWS Certified Cloud Practitioner</span>
+                  <span>AWS Certified</span>
                 </li>
                 <li className="flex items-start">
                   <Award size={20} className="text-primary mt-1 mr-3 shrink-0" />
-                  <span>Spot Performance Award at Teradata</span>
+                  <span>Working with big clients like Siemens, Heroal GmBH etc</span>
                 </li>
                 <li className="flex items-start">
                   <Award size={20} className="text-primary mt-1 mr-3 shrink-0" />

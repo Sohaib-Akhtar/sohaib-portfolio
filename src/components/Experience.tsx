@@ -84,7 +84,7 @@ const Experience = () => {
               onClick={() => setActiveTab("all")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "all" 
-                  ? "bg-background text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -94,7 +94,7 @@ const Experience = () => {
               onClick={() => setActiveTab("full-time")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "full-time" 
-                  ? "bg-background text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -104,7 +104,7 @@ const Experience = () => {
               onClick={() => setActiveTab("part-time")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "part-time" 
-                  ? "bg-background text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -114,7 +114,7 @@ const Experience = () => {
               onClick={() => setActiveTab("internship")}
               className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                 activeTab === "internship" 
-                  ? "bg-background text-foreground shadow-sm" 
+                  ? "bg-[#426EF0] text-foreground shadow-sm" 
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -153,13 +153,13 @@ const Experience = () => {
                       </div>
                     </div>
                     
-                    <div className="mt-2 md:mt-0 flex items-center text-sm text-muted-foreground">
+                    <div className="mt-2 md:mt-0 flex items-center text-sm">
                       <Calendar size={16} className="mr-1" />
                       <span>{exp.period}</span>
                     </div>
                   </div>
                   
-                  <div className="flex items-center text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center text-sm text-white mb-4 bg-[#426EF0] px-3 py-2 rounded-md">
                     <MapPin size={16} className="mr-1" />
                     <span>{exp.location}</span>
                   </div>
