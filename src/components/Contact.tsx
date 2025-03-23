@@ -133,7 +133,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium">Email</h4>
                     <a 
-                      href="sohaib.akhtar.dev@gmail.com" 
+                      href="mailto:sohaib.akhtar.dev@gmail.com" 
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       sohaib.akhtar.dev@gmail.com
@@ -160,7 +160,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium">LinkedIn</h4>
                     <a 
-                      href="https://linkedin.com/in/sohaibakhtar" 
+                      href="https://www.linkedin.com/in/connoisseur1/" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
