@@ -150,6 +150,10 @@
     animation: shimmer 15s linear infinite;
   }
   
+  .glass-effect {
+    @apply relative bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl p-4;
+  }
+  
   .section {
     @apply py-16 md:py-24;
   }

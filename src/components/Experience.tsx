@@ -130,7 +130,7 @@ const Experience = () => {
               className="animated-border bg-card p-6 md:p-8 opacity-0 animate-fade-in"
               style={{ animationDelay: `${300 + index * 100}ms` }}
             >
-              <div className="flex flex-col md:flex-row items-start gap-6">
+              <div className="flex flex-col md:flex-row items-start gap-6 glass-effect">
                 <div className="md:w-24 shrink-0">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-white p-2 shadow-sm">
                     <img 
