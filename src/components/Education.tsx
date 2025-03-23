@@ -20,8 +20,8 @@ const Education = () => {
       institution: "Universität Passau",
       logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGEocpg4HZZZQ/company-logo_400_400/company-logo_400_400/0/1708685471698/university_of_passau_logo?e=1748476800&v=beta&t=L04UnhTHvlIc2P3BhlN2kJVH1W2L4HCpripbb8ZhvGE",
       location: "Passau, Bavaria, Germany",
-      period: "Oct 2023 - Expected 2026",
-      description: "Focusing on advanced topics in software engineering, cloud computing, and artificial intelligence."
+      period: "April 2024 - Expected 2026",
+      description: "Focusing on advanced topics in software engineering, data warehousing, and AI."
     },
     {
       id: "nuces",
@@ -30,7 +30,7 @@ const Education = () => {
       logo: "https://media.licdn.com/dms/image/v2/C510BAQGdFV3S_Aelww/company-logo_400_400/company-logo_400_400/0/1631304359411?e=1748476800&v=beta&t=sAQTIxwRxwuGygyvHNi7LeOpe3JBc1WyyqIajZm5I8E",
       location: "Islamabad, Pakistan",
       period: "Sep 2017 - Jul 2021",
-      description: "Graduated with distinction, earning a place on the Dean's Honour List for academic excellence in Spring 2021 and Fall 2020."
+      description: "Earned a place on the Dean's Honour List for academic excellence in Spring 2021 and Fall 2020."
     }
   ];
 
@@ -154,7 +154,7 @@ const Education = () => {
                   <div>
                     <h4 className="text-lg font-semibold">Online Courses</h4>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Continuously upgrading skills through online platforms focusing on cloud technologies, 
+                      Continuously upgrading skills through online platforms focusing on AI technologies, 
                       design patterns, and advanced programming concepts.
                     </p>
                   </div>

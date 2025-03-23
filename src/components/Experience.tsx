@@ -25,9 +25,9 @@ const Experience = () => {
       location: "Munich, Bavaria, Germany",
       period: "Sept 2024 - Present",
       description: [
-        "Developed from scratch and currently maintaining sales incentive management application for Siemens global sales team in Next Js",
-        "Working with monorepos, microfrontends and microservices",
-        "Implementing CI/CD pipelines for automated testing and deployment",
+        "Developed from scratch a sales incentive dashboard for Siemens global team in Next.js",
+        "Working with Turborepo (microfrontends and microservices) for advanced inventory management systems",
+        "Implementing CI/CD pipelines for automated safe and faster deployments across multiple regions",
         "Collaborating with cross-functional teams",
       ],
       type: "part-time"
@@ -38,11 +38,11 @@ const Experience = () => {
       company: "Teradata",
       logo: "https://media.licdn.com/dms/image/v2/D560BAQGgQByLIN_rtA/company-logo_400_400/company-logo_400_400/0/1697134375805/teradata_logo?e=1748476800&v=beta&t=hbKGjOpgV5YnyAw4NS9vd4wce12-nxeIzqmvmbusCxU",
       location: "Islamabad, Pakistan",
-      period: "Jul 2021 - Mar 2024",
+      period: "Sept 2021 - Mar 2024",
       description: [
-        "Led the development of microservices for data integration solutions using Java and Spring Boot",
-        "Designed and implemented RESTful APIs following best practices and standards",
-        "Optimized application performance by identifying and resolving bottlenecks",
+        "Led the development of microservices for a data integration solutions using Java and Spring Boot",
+        "Designed and implemented complex, performant RESTful APIs",
+        "Optimized applications by identifying bottlenecks to increase customer retention",
         "Received Spot Performance Award and Employee of the Quarter Award for exceptional contributions in AWS optimization"
       ],
       type: "full-time"
