@@ -58,14 +58,14 @@ const Skills = () => {
                 {skillCategories.map(category => (
                   <button
                     key={category.id}
-                    className={`w-full flex items-center p-3 rounded-lg text-left transition-colors ${
+                    className={`w-full flex items-center p-3 rounded-lg text-left transition-all duration-300 ${
                       activeCategory === category.id 
-                        ? "bg-primary text-primary-foreground" 
-                        : "hover:bg-secondary"
+                        ? "gradient-fill text-white" 
+                        : "gradient-border text-foreground"
                     }`}
                     onClick={() => setActiveCategory(category.id)}
                   >
-                    <div className={`mr-3 ${activeCategory === category.id ? "text-primary-foreground" : "text-primary"}`}>
+                    <div className={`mr-3 ${activeCategory === category.id ? "text-white" : "text-primary"}`}>
                       {category.icon}
                     </div>
                     <span className="font-medium">{category.name}</span>

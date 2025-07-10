@@ -90,10 +90,10 @@ const Projects = () => {
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                   activeCategory === category.id 
-                    ? "bg-primary text-primary-foreground" 
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "gradient-fill text-white shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground gradient-border"
                 }`}
               >
                 {category.name}

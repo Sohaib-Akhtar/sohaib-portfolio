@@ -82,40 +82,40 @@ const Experience = () => {
           <div className="inline-flex p-1 rounded-lg bg-secondary">
             <button
               onClick={() => setActiveTab("all")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-500 ${
                 activeTab === "all" 
                   ? "gradient-fill text-white shadow-sm" 
-                  : "text-muted-foreground hover:text-foreground gradient-border"
+                  : "text-muted-foreground hover:text-foreground gradient-border-slow"
               }`}
             >
               All Experiences
             </button>
             <button
               onClick={() => setActiveTab("full-time")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-500 ${
                 activeTab === "full-time" 
                   ? "gradient-fill text-white shadow-sm" 
-                  : "text-muted-foreground hover:text-foreground gradient-border"
+                  : "text-muted-foreground hover:text-foreground gradient-border-slow"
               }`}
             >
               Full-time
             </button>
             <button
               onClick={() => setActiveTab("part-time")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-500 ${
                 activeTab === "part-time" 
                   ? "gradient-fill text-white shadow-sm" 
-                  : "text-muted-foreground hover:text-foreground gradient-border"
+                  : "text-muted-foreground hover:text-foreground gradient-border-slow"
               }`}
             >
               Part-time
             </button>
             <button
               onClick={() => setActiveTab("internship")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-500 ${
                 activeTab === "internship" 
                   ? "gradient-fill text-white shadow-sm" 
-                  : "text-muted-foreground hover:text-foreground gradient-border"
+                  : "text-muted-foreground hover:text-foreground gradient-border-slow"
               }`}
             >
               Internships

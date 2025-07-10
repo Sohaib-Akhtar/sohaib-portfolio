@@ -144,6 +144,31 @@
     animation: gradientShift 0.8s ease infinite;
   }
   
+  .gradient-border-slow {
+    @apply relative bg-transparent rounded-lg overflow-hidden transition-all duration-500 ease-out;
+  }
+  
+  .gradient-border-slow::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg p-[2px] -z-10;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+  }
+  
+  .gradient-border-slow::after {
+    content: '';
+    @apply absolute inset-[2px] rounded-md bg-background -z-10;
+  }
+  
+  .gradient-border-slow:hover {
+    @apply transform scale-105 shadow-lg;
+  }
+  
+  .gradient-border-slow:hover::before {
+    animation: gradientShift 2s ease infinite;
+  }
+  
   .gradient-fill {
     @apply relative rounded-lg overflow-hidden transition-all duration-300 ease-out;
     background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
