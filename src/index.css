@@ -119,6 +119,42 @@
     background-clip: text;
   }
   
+  .gradient-border {
+    @apply relative bg-transparent rounded-lg overflow-hidden transition-all duration-300 ease-out;
+  }
+  
+  .gradient-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg p-[2px] -z-10;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  .gradient-border::after {
+    content: '';
+    @apply absolute inset-[2px] rounded-md bg-background -z-10;
+  }
+  
+  .gradient-border:hover {
+    @apply transform scale-105 shadow-lg;
+  }
+  
+  .gradient-border:hover::before {
+    animation: gradientShift 0.8s ease infinite;
+  }
+  
+  .gradient-fill {
+    @apply relative rounded-lg overflow-hidden transition-all duration-300 ease-out;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+  
+  .gradient-fill:hover {
+    @apply transform scale-105 shadow-lg;
+    animation: gradientShift 0.8s ease infinite;
+  }
   
   .glass-card {
     @apply bg-white/80 dark:bg-black/40 backdrop-blur-lg border border-white/20 dark:border-white/10 shadow-soft;
@@ -183,6 +219,12 @@
   
   .animate-delay-500 {
     animation-delay: 500ms;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
 

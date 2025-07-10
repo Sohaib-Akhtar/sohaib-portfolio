@@ -82,40 +82,40 @@ const Experience = () => {
           <div className="inline-flex p-1 rounded-lg bg-secondary">
             <button
               onClick={() => setActiveTab("all")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                 activeTab === "all" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "gradient-fill text-white shadow-sm" 
+                  : "text-muted-foreground hover:text-foreground gradient-border"
               }`}
             >
               All Experiences
             </button>
             <button
               onClick={() => setActiveTab("full-time")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                 activeTab === "full-time" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "gradient-fill text-white shadow-sm" 
+                  : "text-muted-foreground hover:text-foreground gradient-border"
               }`}
             >
               Full-time
             </button>
             <button
               onClick={() => setActiveTab("part-time")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                 activeTab === "part-time" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "gradient-fill text-white shadow-sm" 
+                  : "text-muted-foreground hover:text-foreground gradient-border"
               }`}
             >
               Part-time
             </button>
             <button
               onClick={() => setActiveTab("internship")}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+              className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                 activeTab === "internship" 
-                  ? "bg-[#426EF0] text-foreground shadow-sm text-white" 
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "gradient-fill text-white shadow-sm" 
+                  : "text-muted-foreground hover:text-foreground gradient-border"
               }`}
             >
               Internships

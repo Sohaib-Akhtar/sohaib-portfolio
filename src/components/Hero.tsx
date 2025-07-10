@@ -30,13 +30,13 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4 mb-10 animate-delay-500">
             <a 
               href="#contact" 
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors duration-200"
+              className="gradient-fill inline-flex items-center px-6 py-3 text-white font-medium"
             >
               Get in touch
             </a>
             <a 
               href="#experience" 
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-medium hover:bg-secondary/80 transition-colors duration-200"
+              className="gradient-border inline-flex items-center px-6 py-3 font-medium text-foreground"
             >
               View my work
             </a>
@@ -44,7 +44,7 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1Yx2K7m4NRNVegVJxSA1kHSqy2XbJZprN/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+              className="gradient-border inline-flex items-center px-6 py-3 font-medium text-foreground"
             >
               View CV
             </a>
