@@ -18,7 +18,7 @@ const Education = () => {
       id: "passau",
       degree: "Master of Science in Computer Science",
       institution: "Universität Passau",
-      logo: "https://media.licdn.com/dms/image/v2/D4E0BAQGEocpg4HZZZQ/company-logo_400_400/company-logo_400_400/0/1708685471698/university_of_passau_logo?e=1748476800&v=beta&t=L04UnhTHvlIc2P3BhlN2kJVH1W2L4HCpripbb8ZhvGE",
+      logo: "/lovable-uploads/deab21ed-77ec-440b-83dc-e4a5b3e3740a.png",
       location: "Passau, Bavaria, Germany",
       period: "April 2024 - Expected 2026",
       description: "Focusing on advanced topics in software engineering, data warehousing, and AI."
@@ -27,7 +27,7 @@ const Education = () => {
       id: "nuces",
       degree: "Bachelor of Science in Computer Science",
       institution: "National University of Computer and Emerging Sciences",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQGdFV3S_Aelww/company-logo_400_400/company-logo_400_400/0/1631304359411?e=1748476800&v=beta&t=sAQTIxwRxwuGygyvHNi7LeOpe3JBc1WyyqIajZm5I8E",
+      logo: "/lovable-uploads/1e62b7dc-9cc6-48cd-a45c-06ea6eb18d10.png",
       location: "Islamabad, Pakistan",
       period: "Sep 2017 - Jul 2021",
       description: "Earned a place on the Dean's Honour List for academic excellence in Spring 2021 and Fall 2020."
@@ -39,7 +39,7 @@ const Education = () => {
       id: "aws-cert",
       name: "AWS Certified Cloud Practitioner",
       organization: "Amazon Web Services (AWS)",
-      logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE0fp2sCqnVLg/company-logo_400_400/company-logo_400_400/0/1738855736997/amazon_web_services_logo?e=1748476800&v=beta&t=nMhI3xoeH31zEGr4rPg_YDP5F58h5aXwhc3-9go9Cl0",
+      logo: "/lovable-uploads/ba7f529b-ef20-40f5-9003-1ae60b1d27fc.png",
       date: "June 2022"
     }
   ];
@@ -145,7 +145,7 @@ const Education = () => {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg overflow-hidden bg-white p-1 shadow-sm shrink-0">
                     <img 
-                      src="https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_400_400/company-logo_400_400/0/1723593046388/udemy_logo?e=1748476800&v=beta&t=kKVrvqHAyC_QFDzaPG4LDuA02ELdvtGkYd3t5rqTPRE" 
+                      src="/lovable-uploads/b543c420-bf0d-4019-9802-6d40ec2e4b69.png" 
                       alt="Udemy logo" 
                       className="w-full h-full object-contain"
                     />

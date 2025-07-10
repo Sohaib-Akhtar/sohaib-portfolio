@@ -83,7 +83,7 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square overflow-hidden rounded-full border-4 border-white/50 shadow-xl max-w-md mx-auto">
               <img 
-                src="https://media.licdn.com/dms/image/v2/D4D03AQH-ASWhf9tmHQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1680690301243?e=1748476800&v=beta&t=gxd-bb2UuDjuZhAfG9MXn-iW4hvL-iQtPDggMk_jPiQ" 
+                src="/lovable-uploads/860e5bc5-c4c1-4f18-ae60-9986b4c2c581.png" 
                 alt="Sohaib Akhtar" 
                 className="object-cover w-full h-full"
               />

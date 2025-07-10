@@ -21,7 +21,7 @@ const Experience = () => {
       id: "motius",
       role: "Software Engineer",
       company: "Motius GmbH",
-      logo: "https://media.licdn.com/dms/image/v2/D4D0BAQFuVUvnSZpM_A/company-logo_400_400/company-logo_400_400/0/1705652294209/motius_gmbh_logo?e=1748476800&v=beta&t=6N-DuFd2ZqNR2sxcv0Al69h_dAbagJ57sZqgbFBC2iQ",
+      logo: "/lovable-uploads/db7afb67-f46c-4707-ab0b-4454654f83c6.png",
       location: "Munich, Bavaria, Germany",
       period: "Sept 2024 - Present",
       description: [
@@ -36,7 +36,7 @@ const Experience = () => {
       id: "teradata",
       role: "Software Engineer",
       company: "Teradata",
-      logo: "https://media.licdn.com/dms/image/v2/D560BAQGgQByLIN_rtA/company-logo_400_400/company-logo_400_400/0/1697134375805/teradata_logo?e=1748476800&v=beta&t=hbKGjOpgV5YnyAw4NS9vd4wce12-nxeIzqmvmbusCxU",
+      logo: "/lovable-uploads/50f3b587-0bc9-4bd5-b98d-97cf4f557c4f.png",
       location: "Islamabad, Pakistan",
       period: "Sept 2021 - Mar 2024",
       description: [
@@ -51,7 +51,7 @@ const Experience = () => {
       id: "funavry",
       role: "Back End Developer Intern",
       company: "Funavry Technologies",
-      logo: "https://media.licdn.com/dms/image/v2/C4D0BAQHrTB68_8ZrcQ/company-logo_400_400/company-logo_400_400/0/1630573785366/funavry_logo?e=1748476800&v=beta&t=IDD2RQGhuxCduxgtOWhrt1vUXYyB2O_wTMpD0rGagZ0",
+      logo: "/lovable-uploads/ef75fdc4-b6f0-491b-9e86-8950385385cd.png",
       location: "Islamabad, Pakistan",
       period: "May 2020 - Aug 2020",
       description: [
