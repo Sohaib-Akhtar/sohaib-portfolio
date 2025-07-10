@@ -40,6 +40,14 @@ const Hero = () => {
             >
               View my work
             </a>
+            <a 
+              href="https://drive.google.com/file/d/1Yx2K7m4NRNVegVJxSA1kHSqy2XbJZprN/view?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+            >
+              View CV
+            </a>
           </div>
           
           <div className="flex items-center gap-6 animate-delay-500">
