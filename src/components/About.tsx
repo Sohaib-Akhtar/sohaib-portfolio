@@ -18,7 +18,7 @@ const About = () => {
   const glassStyle = "bg-white/[0.08] backdrop-blur-[6.7px] border border-white/30 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-[16px]";
   
   return (
-    <section id="about" className="section bg-secondary/30">
+    <section id="about" className="section">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="section-title opacity-0 animate-fade-in">About Me</h2>

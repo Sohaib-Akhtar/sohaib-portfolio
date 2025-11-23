@@ -119,6 +119,10 @@
     background-clip: text;
   }
   
+  .gradient-cursor {
+    background: linear-gradient(to bottom, #6366f1, #ec4899);
+  }
+  
   .gradient-border {
     @apply relative bg-transparent rounded-lg overflow-hidden transition-all duration-300 ease-out;
   }
@@ -215,7 +219,7 @@
   }
   
   .section {
-    @apply py-16 md:py-24;
+    @apply py-2 md:py-4;
   }
   
   .section-title {

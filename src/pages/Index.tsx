@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
@@ -25,7 +25,7 @@ const Index = () => {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 80, // Account for fixed header
+            top: targetElement.offsetTop - 20, // Small offset for better visual alignment
             behavior: 'smooth'
           });
         }
@@ -62,7 +62,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <Navigation />
       
       <main className="flex-grow">
         <Hero />
