@@ -173,7 +173,7 @@ export const PROJECTS_DATA = [
     description: "An AI-powered mobile application designed to help visually impaired individuals navigate their surroundings and identify objects.",
     detailedDescription: "This comprehensive AI solution combines computer vision, natural language processing, and mobile development to create an accessible navigation aid. Features include real-time object detection, text-to-speech conversion, and voice-guided navigation.",
     image: "https://www.asme.org/getmedia/edf28cc5-e0be-43d4-8d87-1ba431306477/walking-stick-for-the-blind_hero.jpg?width=854&height=480&ext=.jpg",
-    technologies: ["Python", "PyTorch", "React Native", "Computer Vision", "NLP"],
+    technologies: ["Python", "PyTorch", "React Native (Expo)", "Computer Vision", "NLP"],
     category: "ai",
     features: [
       "Real-time object detection and recognition",
@@ -182,7 +182,7 @@ export const PROJECTS_DATA = [
       "Accessibility-first mobile interface design"
     ],
     links: {
-      github: "https://github.com/sohaib-akhtar"
+      github: "https://link.springer.com/chapter/10.1007/978-3-031-53717-2_39"
     }
   },
   {
@@ -209,7 +209,7 @@ export const PROJECTS_DATA = [
     description: "A lightweight framework for building scalable DataOps microservices with built-in support for service discovery and monitoring.",
     detailedDescription: "Enterprise-grade microservices framework designed for data-intensive applications. Includes service mesh capabilities, automated scaling, comprehensive monitoring, and seamless integration with cloud platforms.",
     image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Microservices_app_example_v0.4.png",
-    technologies: ["Java", "Spring Boot", "Docker", "Hibernate", "Kubernetes"],
+    technologies: ["TS", "Node.js", "Docker", "Sequelize", "Kubernetes", "AWS"],
     category: "backend",
     features: [
       "Auto-scaling microservices architecture",
@@ -225,7 +225,7 @@ export const PROJECTS_DATA = [
     description: "A platform for healthcare providers to analyze patient data and identify trends to improve care quality and outcomes using AI.",
     detailedDescription: "Comprehensive healthcare data analytics solution that leverages machine learning to provide actionable insights for healthcare providers. Features predictive modeling, patient outcome analysis, and compliance reporting.",
     image: "https://www.xenonstack.com/hubfs/healthcare-analytics-platform-xenonstack.png",
-    technologies: ["Ollama", "React", "AWS", "Data Analytics", "Python"],
+    technologies: ["Ollama", "Next.js", "AWS", "Data Analytics", "Python"],
     category: "fullstack",
     features: [
       "Predictive patient outcome modeling",
