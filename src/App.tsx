@@ -14,30 +14,6 @@ const App = () => {
     // Force dark mode
     document.documentElement.classList.add('dark');
     document.documentElement.style.colorScheme = 'dark';
-    
-    const removeBadge = () => {
-      const badge = document.getElementById('lovable-badge');
-      if (badge) {
-        badge.remove();
-      }
-      
-      // Alternative selector approach
-      document.querySelectorAll('a[href*="lovable.dev/projects"]').forEach(el => {
-        el.remove();
-      });
-    };
-    
-    // Run once on mount
-    removeBadge();
-    
-    // Also set up an observer to catch dynamically added badges
-    const observer = new MutationObserver(() => {
-      removeBadge();
-    });
-    
-    observer.observe(document.body, { childList: true, subtree: true });
-    
-    return () => observer.disconnect();
   }, []);
   
   return (

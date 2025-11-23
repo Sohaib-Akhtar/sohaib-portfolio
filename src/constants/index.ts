@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/sohaib-akhtar",
   linkedin: "https://www.linkedin.com/in/connoisseur1/",
   cv: "https://drive.google.com/file/d/1bu60Omo9DTTSG2U5k4cdr1bKW9ftDBrb/view?usp=sharing",
-  profileImage: "/lovable-uploads/860e5bc5-c4c1-4f18-ae60-9986b4c2c581.png"
+  profileImage: "/assets/images/profile.png"
 };
 
 // Hero Section Content
@@ -80,7 +80,7 @@ export const EXPERIENCE_DATA = [
     period: "Sept 2024 - Present",
     location: "Munich, Germany",
     type: "Part-time",
-    logo: "/lovable-uploads/db7afb67-f46c-4707-ab0b-4454654f83c6.png",
+    logo: "/assets/images/motius-logo.png",
     responsibilities: [
       "Developed sales incentive dashboard for Siemens global team using Next.js",
       "Working with Turborepo architecture for microfrontends and microservices",
@@ -96,7 +96,7 @@ export const EXPERIENCE_DATA = [
     period: "Sept 2021 - Mar 2024",
     location: "Islamabad, Pakistan",
     type: "Full-time",
-    logo: "/lovable-uploads/50f3b587-0bc9-4bd5-b98d-97cf4f557c4f.png",
+    logo: "/assets/images/teradata-logo.png",
     responsibilities: [
       "Led development of microservices for data integration solutions using Java and Spring Boot",
       "Designed and implemented complex, performant RESTful APIs",
@@ -116,7 +116,7 @@ export const EXPERIENCE_DATA = [
     period: "May 2020 - Aug 2020", 
     location: "Islamabad, Pakistan",
     type: "Internship",
-    logo: "/lovable-uploads/ef75fdc4-b6f0-491b-9e86-8950385385cd.png",
+    logo: "/assets/images/funavry-logo.png",
     responsibilities: [
       "Developed backend services using Python and Django framework for AI applications",
       "Implemented database models and migrations for efficient data storage",
@@ -133,7 +133,7 @@ export const EDUCATION_DATA = [
     id: "passau",
     degree: "Master of Science in Computer Science",
     institution: "Universität Passau",
-    logo: "/lovable-uploads/deab21ed-77ec-440b-83dc-e4a5b3e3740a.png",
+    logo: "/assets/images/uni-passau-logo.png",
     location: "Passau, Germany",
     period: "April 2024 - Feb 2026",
     description: "Focusing on advanced topics in software engineering, data warehousing, and AI."
@@ -142,7 +142,7 @@ export const EDUCATION_DATA = [
     id: "nuces",
     degree: "Bachelor of Science in Computer Science",
     institution: "National University of Computer and Emerging Sciences",
-    logo: "/lovable-uploads/1e62b7dc-9cc6-48cd-a45c-06ea6eb18d10.png",
+    logo: "/assets/images/nuces-logo.png",
     location: "Islamabad, Pakistan",
     period: "Sep 2017 - Jul 2021",
     description: "Earned a place on the Dean's Honour List for academic excellence in Spring 2021 and Fall 2020."
@@ -154,14 +154,14 @@ export const CERTIFICATIONS_DATA = [
     id: "aws-cert",
     name: "AWS Certified Cloud Practitioner",
     organization: "Amazon Web Services (AWS)",
-    logo: "/lovable-uploads/ba7f529b-ef20-40f5-9003-1ae60b1d27fc.png",
+    logo: "/assets/images/aws-cert-logo.png",
     date: "June 2022"
   }
 ];
 
 export const LEARNING_DATA = {
   title: "Certifications & Online Learning",
-  logo: "/lovable-uploads/b543c420-bf0d-4019-9802-6d40ec2e4b69.png",
+  logo: "/assets/images/learning-logo.png",
   description: "Continuously upgrading skills through online platforms focusing on AI technologies, design patterns, and advanced programming concepts."
 };
 
