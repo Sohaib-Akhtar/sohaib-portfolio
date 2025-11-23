@@ -1,10 +1,10 @@
 # Personal Portfolio
 
+![C8C3F00E-7565-47D1-8F94-2F8F2838875C_1_201_a](https://github.com/user-attachments/assets/18d2f039-22c8-4219-9446-57fdf6ff2f5a)
+
 A modern, responsive personal portfolio website built with minimal React, TypeScript, and Aceternity UI components.
 
 **Live URL**: https://sohaib-dev.vercel.app/
-
-<img width="1489" height="760" alt="image" src="https://github.com/user-attachments/assets/66684cc6-eb9a-48be-9c0a-90f1115fcf27" />
 
 ## Quick Start
 
