@@ -35,7 +35,7 @@ const Contact = () => {
   };
   
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="section-title opacity-0 animate-fade-in">Get In Touch</h2>

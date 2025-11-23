@@ -42,7 +42,7 @@ const Skills = () => {
   const activeSkills = skillCategories.find(cat => cat.id === activeCategory)?.skills || [];
   
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="section-title opacity-0 animate-fade-in">Skills & Expertise</h2>

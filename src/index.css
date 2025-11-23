@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 225 85% 60%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 5% 96%;
-    --secondary-foreground: 240 6% 10%;
+    --secondary: 240 4% 8%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 5% 96%;
-    --muted-foreground: 240 4% 46.1%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 6% 65%;
 
-    --accent: 228 96% 98%;
-    --accent-foreground: 225 85% 60%;
+    --accent: 225 80% 15%;
+    --accent-foreground: 225 85% 65%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 6% 90%;
-    --input: 240 6% 90%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
     --ring: 225 85% 60%;
 
     --radius: 0.75rem;
@@ -46,37 +46,6 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
-
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
-
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
-
-      --primary: 225 85% 60%;
-      --primary-foreground: 0 0% 98%;
-
-      --secondary: 240 4% 8%;
-      --secondary-foreground: 0 0% 98%;
-
-      --muted: 240 4% 16%;
-      --muted-foreground: 240 6% 65%;
-
-      --accent: 225 80% 15%;
-      --accent-foreground: 225 85% 65%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
-
-      --border: 240 4% 16%;
-      --input: 240 4% 16%;
-      --ring: 225 85% 60%;
-    }
-  }
 
   * {
     @apply border-border;
@@ -112,15 +81,22 @@
     text-wrap: balance;
   }
   
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background: linear-gradient(to right, #6366f1, #ec4899);
+    background: linear-gradient(to right, #8b5cf6, #f472b6);
     -webkit-background-clip: text;
     background-clip: text;
   }
   
   .gradient-cursor {
-    background: linear-gradient(to bottom, #6366f1, #ec4899);
+    background: linear-gradient(to bottom, #8b5cf6, #f472b6);
   }
   
   .gradient-border {
@@ -130,9 +106,7 @@
   .gradient-border::before {
     content: '';
     @apply absolute inset-0 rounded-lg p-[2px] -z-10;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
-    background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
   }
   
   .gradient-border::after {
@@ -144,9 +118,6 @@
     @apply transform scale-105 shadow-lg;
   }
   
-  .gradient-border:hover::before {
-    animation: gradientShift 0.8s ease infinite;
-  }
   
   .gradient-border-slow {
     @apply relative bg-transparent rounded-lg overflow-hidden transition-all duration-500 ease-out;
@@ -155,9 +126,7 @@
   .gradient-border-slow::before {
     content: '';
     @apply absolute inset-0 rounded-lg p-[2px] -z-10;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899, #f59e0b);
-    background-size: 200% 200%;
-    animation: gradientShift 5s ease infinite;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
   }
   
   .gradient-border-slow::after {
@@ -169,20 +138,14 @@
     @apply transform scale-105 shadow-lg;
   }
   
-  .gradient-border-slow:hover::before {
-    animation: gradientShift 2s ease infinite;
-  }
   
   .gradient-fill {
     @apply relative rounded-lg overflow-hidden transition-all duration-300 ease-out;
     background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
-    background-size: 200% 200%;
-    animation: gradientShift 3s ease infinite;
   }
   
   .gradient-fill:hover {
     @apply transform scale-105 shadow-lg;
-    animation: gradientShift 0.8s ease infinite;
   }
   
   .glass-card {
@@ -208,10 +171,8 @@
   
   .animated-border::before {
     content: '';
-    @apply absolute inset-0 rounded-xl p-[1px] -z-10 animate-shimmer;
-    background: linear-gradient(to right, #4d4fbd, #714bcb, #c33c80, #714bcb, #4d4fbd);
-    background-size: 200% 100%;
-    animation: shimmer 15s linear infinite;
+    @apply absolute inset-0 rounded-xl p-[1px] -z-10;
+    background: linear-gradient(to right, #6366f1, #8b5cf6, #ec4899, #8b5cf6, #6366f1);
   }
   
   .glass-effect {
@@ -257,15 +218,36 @@
   }
 }
 
-/* Add this to your global CSS file (e.g., globals.css) */
-@media (prefers-color-scheme: light) {
-  /* This overrides the light mode preference with dark mode styles */
-  html {
-    color-scheme: dark;
-  }
+/* Force dark mode */
+html {
+  color-scheme: dark !important;
 }
 
-/* For absolutely ensuring dark mode in all cases, you can also add: */
 :root {
-  color-scheme: dark;
+  color-scheme: dark !important;
+}
+
+body {
+  background-color: hsl(240, 10%, 3.9%) !important;
+  color: hsl(0, 0%, 98%) !important;
+}
+
+/* Override any light mode preferences */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: 240 10% 3.9% !important;
+    --foreground: 0 0% 98% !important;
+    --card: 240 10% 3.9% !important;
+    --card-foreground: 0 0% 98% !important;
+    --popover: 240 10% 3.9% !important;
+    --popover-foreground: 0 0% 98% !important;
+    --secondary: 240 4% 8% !important;
+    --secondary-foreground: 0 0% 98% !important;
+    --muted: 240 4% 16% !important;
+    --muted-foreground: 240 6% 65% !important;
+    --accent: 225 80% 15% !important;
+    --accent-foreground: 225 85% 65% !important;
+    --border: 240 4% 16% !important;
+    --input: 240 4% 16% !important;
+  }
 }

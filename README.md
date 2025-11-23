@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-A modern, responsive personal portfolio website built with React, TypeScript, and shadcn-ui with beautiful Aceternity UI components.
+A modern, responsive personal portfolio website built with minimal React, TypeScript, and Aceternity UI components.
 
 **Live URL**: https://sohaib-dev.vercel.app/
 
@@ -51,13 +51,8 @@ This project is built with modern web technologies for optimal performance and d
 - **[Vite](https://vitejs.dev/)** - Lightning-fast build tool and dev server
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
 - **[React](https://reactjs.org/)** - UI library for building interactive interfaces
-- **[shadcn-ui](https://ui.shadcn.com/)** - Beautiful, accessible component library
 - **[Aceternity UI](https://ui.aceternity.com/)** - Modern animated UI components
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready motion library for React
-- **[React Router](https://reactrouter.com/)** - Client-side routing
-- **[TanStack Query](https://tanstack.com/query/)** - Data fetching and caching
-- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible UI primitives
 
 ## Project Structure
 
@@ -75,29 +70,6 @@ src/
 ├── pages/              # Page components
 └── main.tsx           # Application entry point
 ```
-
-## Development
-
-### Adding Aceternity Components
-
-Aceternity UI components are installed individually using the shadcn CLI. Framer Motion is already included as a base dependency for animations.
-
-To add a specific component:
-
-```bash
-# Example: Add a specific Aceternity component
-npx shadcn@latest add @aceternity/tracing-beam
-npx shadcn@latest add @aceternity/cards-demo-1
-npx shadcn@latest add @aceternity/infinite-moving-cards
-```
-
-Or install from the registry URL:
-
-```bash
-npx shadcn@latest add https://ui.aceternity.com/registry/[component].json
-```
-
-Refer to the [Aceternity UI documentation](https://ui.aceternity.com/components) for available components.
 
 ### Code Quality
 

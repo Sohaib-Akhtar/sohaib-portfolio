@@ -20,11 +20,8 @@ const About = () => {
   return (
     <section id="about" className="section">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="section-title opacity-0 animate-fade-in">About Me</h2>
-          <p className="section-subtitle opacity-0 animate-fade-in animate-delay-100">
-            Code Artist or Code Scientist? Meet Sohaib.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

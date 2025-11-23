@@ -65,31 +65,33 @@ const Index = () => {
       <Navigation />
       
       <main className="flex-grow">
-        <Hero />
-        
-        <ScrollObserver>
-          <About />
-        </ScrollObserver>
-        
-        <ScrollObserver>
-          <Experience />
-        </ScrollObserver>
-        
-        <ScrollObserver>
-          <Education />
-        </ScrollObserver>
-        
-        <ScrollObserver>
-          <Skills />
-        </ScrollObserver>
-        
-        <ScrollObserver>
-          <Projects />
-        </ScrollObserver>
-        
-        <ScrollObserver>
-          <Contact />
-        </ScrollObserver>
+        <div className="md:px-8 lg:px-16 xl:px-24 2xl:px-32">
+          <Hero />
+          
+          <ScrollObserver>
+            <About />
+          </ScrollObserver>
+          
+          <ScrollObserver>
+            <Experience />
+          </ScrollObserver>
+          
+          <ScrollObserver>
+            <Education />
+          </ScrollObserver>
+          
+          <ScrollObserver>
+            <Skills />
+          </ScrollObserver>
+          
+          <ScrollObserver>
+            <Projects />
+          </ScrollObserver>
+          
+          <ScrollObserver>
+            <Contact />
+          </ScrollObserver>
+        </div>
       </main>
       
       <Footer />

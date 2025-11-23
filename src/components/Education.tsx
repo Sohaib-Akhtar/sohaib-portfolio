@@ -69,11 +69,12 @@ const Education = () => {
               >
                 <div className="flex flex-col md:flex-row items-start gap-6 glass-effect text-white">
                     <div className="md:w-24 shrink-0">
-                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-white p-2 shadow-sm">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 relative shadow-sm">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/35 via-purple-500/35 to-pink-500/35" />
                         <img 
                           src={item.logo} 
                           alt={`${item.institution} logo`} 
-                          className="w-full h-full object-contain"
+                          className="w-full h-full object-contain relative z-10 bg-white rounded-lg p-1"
                         />
                       </div>
                     </div>
@@ -117,11 +118,12 @@ const Education = () => {
                   style={{ animationDelay: `${300 + index * 100}ms` }}
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg overflow-hidden bg-white p-1 shadow-sm shrink-0">
+                    <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 relative shadow-sm shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/35 via-purple-500/35 to-pink-500/35" />
                       <img 
                         src={cert.logo} 
                         alt={`${cert.organization} logo`} 
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain relative z-10 bg-white rounded-lg p-1"
                       />
                     </div>
                     
@@ -143,11 +145,12 @@ const Education = () => {
               
               <div className="animated-border bg-card p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-white p-1 shadow-sm shrink-0">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 relative shadow-sm shrink-0">
+                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/35 via-purple-500/35 to-pink-500/35" />
                     <img 
                       src="/lovable-uploads/b543c420-bf0d-4019-9802-6d40ec2e4b69.png" 
                       alt="Udemy logo" 
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain relative z-10 bg-white rounded-lg p-1"
                     />
                   </div>
                   

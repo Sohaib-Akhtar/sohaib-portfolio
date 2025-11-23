@@ -11,6 +11,10 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
+    // Force dark mode
+    document.documentElement.classList.add('dark');
+    document.documentElement.style.colorScheme = 'dark';
+    
     const removeBadge = () => {
       const badge = document.getElementById('lovable-badge');
       if (badge) {

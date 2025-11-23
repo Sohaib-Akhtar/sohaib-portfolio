@@ -19,7 +19,7 @@ const Footer = () => {
               Sohaib Akhtar
             </div>
             <p className="text-muted-foreground">
-              Software Engineer • Cloud Enthusiast • Problem Solver
+              Software Engineering Portfolio
             </p>
           </div>
           
