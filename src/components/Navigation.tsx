@@ -31,7 +31,7 @@ const Navigation = () => {
   }));
 
   return (
-    <div className="fixed bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 z-50">
+    <div className="fixed bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 z-40">
       <FloatingDock
         items={navItems}
         desktopClassName="bg-white/20 backdrop-blur-md border border-white/10"

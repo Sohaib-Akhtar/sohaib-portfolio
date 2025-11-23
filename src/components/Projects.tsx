@@ -1,79 +1,154 @@
+"use client";
 
-import React, { useState } from 'react';
-import { Eye, Github, ExternalLink } from 'lucide-react';
-
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  category: string;
-  links: {
-    demo?: string;
-    github?: string;
-  };
-}
+import { useState } from 'react';
+import { Github, ExternalLink, Eye, Code, Zap, Target, Check } from 'lucide-react';
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { PROJECTS_DATA, PROJECT_CATEGORIES } from "@/constants";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("all");
-  
-  const projects: Project[] = [
-    {
-      id: "blindassistant",
-      title: "Blind Assistant",
-      description: "An AI-powered mobile application designed to help visually impaired individuals navigate their surroundings and identify objects.",
-      image: "https://www.asme.org/getmedia/edf28cc5-e0be-43d4-8d87-1ba431306477/walking-stick-for-the-blind_hero.jpg?width=854&height=480&ext=.jpg",
-      technologies: ["Python", "PyTorch", "React Native"],
-      category: "ai",
-      links: {
-        github: "https://github.com/sohaib-akhtar"
-      }
-    },
-    {
-      id: "urdu-asr",
-      title: "Urdu ASR",
-      description: "Automatic Speech Recognition system for the Urdu language to convert spoken words into text with high accuracy.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Urdu_alphabets.png",
-      technologies: ["Python", "KaldiASR", "NLP", "Speech Processing"],
-      category: "ai",
-      links: {
-        github: "https://github.com/sohaib-akhtar"
-      }
-    },
-    {
-      id: "microservice-framework",
-      title: "DataOps Framework",
-      description: "A lightweight framework for building scalable DataOps microservices with built-in support for service discovery and monitoring.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/57/Microservices_app_example_v0.4.png",
-      technologies: ["Java", "Spring Boot", "Docker", "Hibernate"],
-      category: "backend",
-      links: {
-      }
-    },
-    {
-      id: "healthcare-analytics",
-      title: "Healthcare Analytics Platform",
-      description: "A platform for healthcare providers to analyze patient data and identify trends to improve care quality and outcomes using AI.",
-      image: "https://www.xenonstack.com/hubfs/healthcare-analytics-platform-xenonstack.png",
-      technologies: ["Ollama", "React", "AWS", "Data Analytics"],
-      category: "fullstack",
-      links: {
-      }
-    }
-  ];
-  
-  const categories = [
-    { id: "all", name: "All Projects" },
-    { id: "ai", name: "AI & Machine Learning" },
-    { id: "backend", name: "Backend & APIs" },
-    { id: "fullstack", name: "Full Stack" }
-  ];
-  
+
   const filteredProjects = activeCategory === "all" 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
-  
+    ? PROJECTS_DATA 
+    : PROJECTS_DATA.filter(project => project.category === activeCategory);
+
+  const createDetailedContent = (project: typeof PROJECTS_DATA[0]) => {
+    return (
+      <div className="space-y-8">
+        <div className="relative">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-64 object-cover rounded-xl shadow-lg"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl" />
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 space-y-6">
+            <div>
+              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+                <Target className="h-5 w-5 text-blue-500" />
+                Project Overview
+              </h3>
+              <p className="text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+                {project.detailedDescription}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+                <Zap className="h-5 w-5 text-yellow-500" />
+                Key Features
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {project.features.map((feature, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg">
+                    <Check className="h-5 w-5 text-green-500 shrink-0" />
+                    <span className="text-base text-neutral-700 dark:text-neutral-300">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+                <Code className="h-5 w-5 text-purple-500" />
+                Technology Stack
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-full text-sm font-medium shadow-lg"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {Object.keys(project.links).length > 0 && (
+              <div>
+                <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+                  <Eye className="h-5 w-5 text-indigo-500" />
+                  Project Links
+                </h3>
+                <div className="flex flex-wrap gap-4">
+                  {'demo' in project.links && project.links.demo && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-medium shadow-lg"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                      Live Demo
+                    </a>
+                  )}
+                  {'github' in project.links && project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg hover:from-gray-900 hover:to-black transition-all duration-300 font-medium shadow-lg"
+                    >
+                      <Github className="h-5 w-5" />
+                      View Code
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl">
+              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Project Category</h4>
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full text-sm font-medium">
+                {PROJECT_CATEGORIES.find(cat => cat.id === project.category)?.name}
+              </span>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl">
+              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Development Status</h4>
+              <div className="flex items-center gap-2">
+                <div className="h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-base text-neutral-700 dark:text-neutral-300 font-medium">Completed</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-xl">
+              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Tech Highlights</h4>
+              <ul className="space-y-2 text-base text-neutral-700 dark:text-neutral-300">
+                {project.technologies.slice(0, 3).map((tech, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <div className="h-2 w-2 bg-blue-500 rounded-full"></div>
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const cards = filteredProjects.map((project, index) => (
+    <Card
+      key={project.id}
+      card={{
+        src: project.image,
+        title: project.title,
+        category: PROJECT_CATEGORIES.find(cat => cat.id === project.category)?.name || project.category,
+        content: createDetailedContent(project),
+      }}
+      index={index}
+      layout={true}
+    />
+  ));
+
   return (
     <section id="projects" className="section bg-secondary/30">
       <div className="container mx-auto px-4 md:px-6">
@@ -86,14 +161,14 @@ const Projects = () => {
         
         <div className="flex justify-center mb-10 opacity-0 animate-fade-in animate-delay-200">
           <div className="inline-flex p-1 rounded-lg bg-background">
-            {categories.map(category => (
+            {PROJECT_CATEGORIES.map(category => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
                   activeCategory === category.id 
-                    ? "gradient-fill text-white shadow-sm" 
-                    : "text-muted-foreground hover:text-foreground gradient-border"
+                    ? "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-sm" 
+                    : "text-muted-foreground hover:text-foreground hover:bg-gradient-to-r hover:from-indigo-500/10 hover:to-purple-500/10"
                 }`}
               >
                 {category.name}
@@ -102,64 +177,8 @@ const Projects = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
-          {filteredProjects.map((project, index) => (
-            <div 
-              key={project.id}
-              className="group animated-border bg-card rounded-xl overflow-hidden opacity-0 animate-fade-in"
-              style={{ animationDelay: `${300 + index * 100}ms` }}
-            >
-              <div className="relative overflow-hidden aspect-video">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <div className="flex gap-3">
-                    {project.links.demo && (
-                      <a 
-                        href={project.links.demo} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-3 py-2 rounded-full text-sm font-medium transition-colors"
-                      >
-                        <Eye size={16} />
-                        <span>View Demo</span>
-                      </a>
-                    )}
-                    {project.links.github && (
-                      <a 
-                        href={project.links.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-3 py-2 rounded-full text-sm font-medium transition-colors"
-                      >
-                        <Github size={16} />
-                        <span>View Code</span>
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="mb-4">{project.description}</p>
-                
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.technologies.map((tech, i) => (
-                    <span 
-                      key={i} 
-                      className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="w-full opacity-0 animate-fade-in animate-delay-300">
+          <Carousel items={cards} />
         </div>
       </div>
     </section>

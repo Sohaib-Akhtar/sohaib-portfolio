@@ -22,7 +22,7 @@ const Header = () => {
     <>
       <header 
         ref={headerRef}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled 
             ? `py-3 ${glassStyle}` 
             : 'py-5 bg-transparent'
@@ -67,7 +67,7 @@ const Header = () => {
       {/* Mobile Navigation - Separated from header */}
       {isMenuOpen && (
         <div 
-          className={`md:hidden fixed left-0 right-0 z-50 ${
+          className={`md:hidden fixed left-0 right-0 z-40 ${
             isScrolled ? glassStyle : "bg-white/[0.08] backdrop-blur-[6.7px] shadow-[0_4px_30px_rgba(0,0,0,0.2)]"
           } transition-all duration-300`}
           style={{
