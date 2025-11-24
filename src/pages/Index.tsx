@@ -14,9 +14,12 @@ import ScrollObserver from '../components/ScrollObserver';
 const Index = () => {
   // Initialize scroll behavior and handle section animations
   useEffect(() => {
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    const anchorListeners = new Map();
+    
     // Smooth scroll behavior for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+    anchors.forEach(anchor => {
+      const clickHandler = function(e: Event) {
         e.preventDefault();
         
         const targetId = this.getAttribute('href')?.substring(1);
@@ -25,27 +28,36 @@ const Index = () => {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 20, // Small offset for better visual alignment
+            top: targetElement.offsetTop - 20,
             behavior: 'smooth'
           });
         }
-      });
+      };
+      
+      anchor.addEventListener('click', clickHandler);
+      anchorListeners.set(anchor, clickHandler);
     });
     
-    // Intersection Observer for scroll animations
+    // Intersection Observer for scroll animations  
     const sections = document.querySelectorAll('section');
+    const isMobile = window.innerWidth < 768;
     
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1
+      rootMargin: isMobile ? '50px' : '0px',
+      threshold: isMobile ? 0.05 : 0.1
     };
     
+    let rafId: number;
     const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+      if (rafId) cancelAnimationFrame(rafId);
+      
+      rafId = requestAnimationFrame(() => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
       });
     }, observerOptions);
     
@@ -54,6 +66,16 @@ const Index = () => {
     });
     
     return () => {
+      // Clean up anchor link listeners
+      anchorListeners.forEach((handler, anchor) => {
+        anchor.removeEventListener('click', handler);
+      });
+      anchorListeners.clear();
+      
+      // Clean up animation frame
+      if (rafId) cancelAnimationFrame(rafId);
+      
+      // Clean up intersection observer
       sections.forEach(section => {
         sectionObserver.unobserve(section);
       });

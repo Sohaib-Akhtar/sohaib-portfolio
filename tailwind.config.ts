@@ -83,28 +83,28 @@ export default {
 					to: { height: '0' }
 				},
 				fadeIn: {
-					'0%': { opacity: '0', transform: 'translateY(10px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' }
+					'0%': { opacity: '0', transform: 'translate3d(0, 10px, 0)' },
+					'100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' }
 				},
 				fadeInLeft: {
-					'0%': { opacity: '0', transform: 'translateX(-20px)' },
-					'100%': { opacity: '1', transform: 'translateX(0)' }
+					'0%': { opacity: '0', transform: 'translate3d(-20px, 0, 0)' },
+					'100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' }
 				},
 				fadeInRight: {
-					'0%': { opacity: '0', transform: 'translateX(20px)' },
-					'100%': { opacity: '1', transform: 'translateX(0)' }
+					'0%': { opacity: '0', transform: 'translate3d(20px, 0, 0)' },
+					'100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' }
 				},
 				scaleIn: {
-					'0%': { opacity: '0', transform: 'scale(0.95)' },
-					'100%': { opacity: '1', transform: 'scale(1)' }
+					'0%': { opacity: '0', transform: 'scale3d(0.95, 0.95, 1)' },
+					'100%': { opacity: '1', transform: 'scale3d(1, 1, 1)' }
 				},
 				float: {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-5px)' }
+					'0%, 100%': { transform: 'translate3d(0, 0, 0)' },
+					'50%': { transform: 'translate3d(0, -5px, 0)' }
 				},
 				slideDown: {
-					'0%': { transform: 'translateY(-100%)' },
-					'100%': { transform: 'translateY(0)' }
+					'0%': { transform: 'translate3d(0, -100%, 0)' },
+					'100%': { transform: 'translate3d(0, 0, 0)' }
 				},
 				shimmer: {
 					'0%': { backgroundPosition: '-200% 0' },

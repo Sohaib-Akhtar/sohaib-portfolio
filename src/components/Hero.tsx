@@ -190,12 +190,12 @@ const Hero = () => {
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/4 blur-sm" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/4" />
         
-        <Suspense fallback={<div className="w-full h-full" />}>
+        <Suspense fallback={<div className="w-full h-full opacity-0" />}>
           <SparklesCore
             background="transparent"
             minSize={0.4}
             maxSize={1}
-            particleDensity={1200}
+            particleDensity={isMobile ? 200 : 800}
             className="w-full h-full"
             particleColor="#FFFFFF"
           />

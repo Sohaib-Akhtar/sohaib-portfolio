@@ -10,6 +10,7 @@ import {
 } from "motion/react";
 
 import { useRef, useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export const FloatingDock = ({
   items,
@@ -143,10 +144,11 @@ function IconContainer({
   href: string;
 }) {
   let ref = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   let distance = useTransform(mouseX, (val) => {
+    if (isMobile) return 0;
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-
     return val - bounds.x - bounds.width / 2;
   });
 
@@ -154,11 +156,7 @@ function IconContainer({
   let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
 
   let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  let heightTransformIcon = useTransform(
-    distance,
-    [-150, 0, 150],
-    [20, 40, 20],
-  );
+  let heightTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
 
   let width = useSpring(widthTransform, {
     mass: 0.1,
@@ -229,44 +227,13 @@ function IconContainerMobile({
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
-  let distance = useTransform(mouseX, (val) => {
-    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+  const staticSize = 44;
+  const staticIconSize = 22;
 
-    return val - bounds.x - bounds.width / 2;
-  });
-
-  // Better sizing for mobile touch interaction
-  let widthTransform = useTransform(distance, [-150, 0, 150], [36, 52, 36]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [36, 52, 36]);
-
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [18, 26, 18]);
-  let heightTransformIcon = useTransform(
-    distance,
-    [-150, 0, 150],
-    [18, 26, 18],
-  );
-
-  let width = useSpring(widthTransform, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  });
-  let height = useSpring(heightTransform, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  });
-
-  let widthIcon = useSpring(widthTransformIcon, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  });
-  let heightIcon = useSpring(heightTransformIcon, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  });
+  let width = useMotionValue(staticSize);
+  let height = useMotionValue(staticSize);
+  let widthIcon = useMotionValue(staticIconSize);
+  let heightIcon = useMotionValue(staticIconSize);
 
   const [hovered, setHovered] = useState(false);
 

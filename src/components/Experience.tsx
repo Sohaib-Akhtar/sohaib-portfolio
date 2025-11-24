@@ -48,7 +48,7 @@ const Experience = () => {
     technologies: string[];
     achievements?: string[];
   }) => (
-    <div className="space-y-4 max-w-md">
+    <div className="space-y-4 max-w-full">
       <div className="space-y-2">
         <div className="flex items-center gap-2">
           <h3 className="text-lg font-semibold">{role}</h3>
@@ -155,7 +155,7 @@ const Experience = () => {
             View more
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-auto p-4" side="top" align="start">
+        <PopoverContent className="w-auto max-w-[90vw] md:max-w-md p-4" side="top" align="start">
           <ExperienceDetails
             role={role}
             company={company}
