@@ -84,13 +84,7 @@ export const DottedGlowBackground = ({
   };
 
   const detectDarkMode = (): boolean => {
-    const root = document.documentElement;
-    if (root.classList.contains("dark")) return true;
-    if (root.classList.contains("light")) return false;
-    return (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    );
+    return true;
   };
 
   // Keep resolved colors in sync with theme changes and prop updates
@@ -121,11 +115,6 @@ export const DottedGlowBackground = ({
 
     compute();
 
-    const mql = window.matchMedia
-      ? window.matchMedia("(prefers-color-scheme: dark)")
-      : null;
-    const handleMql = () => compute();
-    mql?.addEventListener?.("change", handleMql);
 
     const mo = new MutationObserver(() => compute());
     mo.observe(document.documentElement, {
@@ -134,7 +123,6 @@ export const DottedGlowBackground = ({
     });
 
     return () => {
-      mql?.removeEventListener?.("change", handleMql);
       mo.disconnect();
     };
   }, [

@@ -8,13 +8,13 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import {
-  IconBuildingSkyscraper,
-  IconCode,
-  IconCalendar,
-  IconMapPin,
-  IconRocket,
-  IconEye,
-} from "@tabler/icons-react";
+  Building,
+  Code,
+  Calendar,
+  MapPin,
+  Rocket,
+  Eye,
+} from "lucide-react";
 import { EXPERIENCE_DATA } from "@/constants";
 
 const Experience = () => {
@@ -57,11 +57,11 @@ const Experience = () => {
         <p className="text-sm font-medium text-muted-foreground">{company}</p>
         <div className="flex items-center gap-4 text-xs md:text-sm text-muted-foreground">
           <div className="flex items-center gap-1">
-            <IconCalendar className="h-3 w-3" />
+            <Calendar className="h-3 w-3" />
             <span>{period}</span>
           </div>
           <div className="flex items-center gap-1">
-            <IconMapPin className="h-3 w-3" />
+            <MapPin className="h-3 w-3" />
             <span>{location}</span>
           </div>
         </div>
@@ -135,11 +135,11 @@ const Experience = () => {
         <p className="text-xs font-medium text-muted-foreground">{company}</p>
         <div className="flex items-center gap-4 text-xs md:text-sm text-muted-foreground">
           <div className="flex items-center gap-1">
-            <IconCalendar className="h-3 w-3" />
+            <Calendar className="h-3 w-3" />
             <span>{period}</span>
           </div>
           <div className="flex items-center gap-1">
-            <IconMapPin className="h-3 w-3" />
+            <MapPin className="h-3 w-3" />
             <span>{location}</span>
           </div>
         </div>
@@ -151,7 +151,7 @@ const Experience = () => {
             variant="outline"
             className="w-fit mt-2 bg-white text-black hover:bg-gray-50 border-gray-200 rounded-md text-xs px-2 py-1 h-auto"
           >
-            <IconEye className="h-2.5 w-2.5" />
+            <Eye className="h-2.5 w-2.5" />
             View more
           </Button>
         </PopoverTrigger>
@@ -174,13 +174,13 @@ const Experience = () => {
   const getExperienceIcon = (title: string) => {
     switch (title) {
       case "Current Role":
-        return <IconRocket className="h-4 w-4 text-neutral-500" />;
+        return <Rocket className="h-4 w-4 text-neutral-500" />;
       case "Previous Role":
-        return <IconBuildingSkyscraper className="h-4 w-4 text-neutral-500" />;
+        return <Building className="h-4 w-4 text-neutral-500" />;
       case "Early Career":
-        return <IconCode className="h-4 w-4 text-neutral-500" />;
+        return <Code className="h-4 w-4 text-neutral-500" />;
       default:
-        return <IconCode className="h-4 w-4 text-neutral-500" />;
+        return <Code className="h-4 w-4 text-neutral-500" />;
     }
   };
 

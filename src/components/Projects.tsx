@@ -27,17 +27,17 @@ const Projects = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-base font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
                 <Target className="h-5 w-5 text-blue-500" />
                 Project Overview
               </h3>
-              <p className="text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                 {project.detailedDescription}
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-base font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
                 <Zap className="h-5 w-5 text-yellow-500" />
                 Key Features
               </h3>
@@ -45,14 +45,14 @@ const Projects = () => {
                 {project.features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg">
                     <Check className="h-5 w-5 text-green-500 shrink-0" />
-                    <span className="text-base text-neutral-700 dark:text-neutral-300">{feature}</span>
+                    <span className="text-sm text-neutral-700 dark:text-neutral-300">{feature}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+              <h3 className="text-base font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
                 <Code className="h-5 w-5 text-purple-500" />
                 Technology Stack
               </h3>
@@ -70,7 +70,7 @@ const Projects = () => {
 
             {Object.keys(project.links).length > 0 && (
               <div>
-                <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-4 flex items-center gap-2">
+                <h3 className="text-base font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
                   <Eye className="h-5 w-5 text-indigo-500" />
                   Project Links
                 </h3>
@@ -104,23 +104,23 @@ const Projects = () => {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-xl">
-              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Project Category</h4>
+              <h4 className="text-sm font-semibold text-neutral-900 dark:text-white mb-2">Project Category</h4>
               <span className="inline-block px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full text-sm font-medium">
                 {PROJECT_CATEGORIES.find(cat => cat.id === project.category)?.name}
               </span>
             </div>
 
             <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 p-6 rounded-xl">
-              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Development Status</h4>
+              <h4 className="text-sm font-semibold text-neutral-900 dark:text-white mb-2">Development Status</h4>
               <div className="flex items-center gap-2">
                 <div className="h-3 w-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-base text-neutral-700 dark:text-neutral-300 font-medium">Completed</span>
+                <span className="text-sm text-neutral-700 dark:text-neutral-300 font-medium">Completed</span>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-6 rounded-xl">
-              <h4 className="text-base font-semibold text-neutral-900 dark:text-white mb-3">Tech Highlights</h4>
-              <ul className="space-y-2 text-base text-neutral-700 dark:text-neutral-300">
+              <h4 className="text-sm font-semibold text-neutral-900 dark:text-white mb-2">Tech Highlights</h4>
+              <ul className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
                 {project.technologies.slice(0, 3).map((tech, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <div className="h-2 w-2 bg-blue-500 rounded-full"></div>

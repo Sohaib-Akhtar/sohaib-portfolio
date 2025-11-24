@@ -1,11 +1,15 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { TypewriterEffect } from '@/components/ui/typewriter-effect';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
-import { SparklesCore } from '@/components/ui/sparkles';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { PERSONAL_INFO, HERO_CONTENT, SOCIAL_LINKS } from '@/constants';
+
+// Dynamic import for heavy SparklesCore component
+const SparklesCore = lazy(() => 
+  import('@/components/ui/sparkles').then(module => ({ default: module.SparklesCore }))
+);
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -186,14 +190,16 @@ const Hero = () => {
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/4 blur-sm" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/4" />
         
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
+        <Suspense fallback={<div className="w-full h-full" />}>
+          <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={1}
+            particleDensity={1200}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
+        </Suspense>
         
         <div className="absolute inset-0 w-full h-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
